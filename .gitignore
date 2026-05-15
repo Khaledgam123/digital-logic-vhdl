@@ -1,0 +1,6 @@
+*.o
+*.cf
+*.exe
+*.vcd
+*.ghw
+work-obj*.cf
