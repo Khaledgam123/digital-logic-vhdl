@@ -12,6 +12,11 @@ echo "Running OR gate test..."
 ghdl -a src/orgate.vhdl
 ghdl -a tb/orgate_tb.vhdl
 ghdl -e orgate_tb
-ghdl -r orgate_tb
+ghdl -r orgate_tb 
 
+echo "Running XOR gate test..."
+ghdl -a src/xorgate.vhdl
+ghdl -a tb/xorgate_tb.vhdl
+ghdl -e xorgate_tb
+ghdl -r xorgate_tb
 echo "All tests completed successfully."
