@@ -26,4 +26,9 @@ ghdl -a tb/nandgate_tb.vhdl
 ghdl -e nandgate_tb
 ghdl -r nandgate_tb
 
+echo "Running NOR gate test..."
+ghdl -a src/norgate.vhdl
+ghdl -a tb/norgate_tb.vhdl
+ghdl -e norgate_tb
+ghdl -r norgate_tb
 echo "All tests completed successfully."
