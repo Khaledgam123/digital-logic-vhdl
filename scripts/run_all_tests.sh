@@ -31,4 +31,11 @@ ghdl -a src/norgate.vhdl
 ghdl -a tb/norgate_tb.vhdl
 ghdl -e norgate_tb
 ghdl -r norgate_tb
+
+echo "Running XNOR gate test..."
+ghdl -a src/xnorgate.vhdl
+ghdl -a tb/xnorgate_tb.vhdl
+ghdl -e xnorgate_tb
+ghdl -r xnorgate_tb
+
 echo "All tests completed successfully."
