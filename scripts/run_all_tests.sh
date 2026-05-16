@@ -19,4 +19,11 @@ ghdl -a src/xorgate.vhdl
 ghdl -a tb/xorgate_tb.vhdl
 ghdl -e xorgate_tb
 ghdl -r xorgate_tb
+
+echo "Running NAND gate test..."
+ghdl -a src/nandgate.vhdl
+ghdl -a tb/nandgate_tb.vhdl
+ghdl -e nandgate_tb
+ghdl -r nandgate_tb
+
 echo "All tests completed successfully."
